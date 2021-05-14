@@ -63,7 +63,6 @@
                 <div class="plus-minus-btn">
                     <p id="plus-sign-first">+</p>
                     <p id="minus-sign-first">-</p>
-                    <!-- <p> <span id="plus-sign-first">+</span> <span id="minus-sign-first">-</span> </p> -->
                 </div>
             </div>
             
@@ -121,7 +120,6 @@
 
     <script>
 
-
         //ticket number increment for every plus click
         function incrementTicket(idOfInput){
             var currentNumber= document.getElementById(idOfInput).value;
@@ -138,6 +136,7 @@
             var total=newNumber+currentNumberInteger;
             document.getElementById(idOfInput).value=total;
         }
+
 
         //ticket number decrement for every minus click
         function decrementTicket(idOfInput){
@@ -156,6 +155,7 @@
             }
         }
 
+
         //subTotal, vat, total cost estimation function
         function cost(){
             var firstTotal = document.getElementById('input-first').value;
@@ -172,8 +172,6 @@
             document.getElementById('total').innerText=total;
         }
 
-        // var firstTotal = document.getElementById('input-first').value;
-        // cost();
 
         //for first class increment
         var increment = document.getElementById('plus-sign-first');
@@ -203,6 +201,7 @@
             cost();
             
         })
+
 
         //for economy class decrement
         var increment = document.getElementById('minus-sign-economy');
